@@ -33,8 +33,24 @@
     </nav>
   </header>
 
-  <section class="hero" id="hero" style="background:#B2AC88; border-radius:16px; padding:32px 24px; color:#222; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-    <h2 style="color:#222;">Welcome</h2>
+  <section class="hero" id="hero" style="background:#B2AC88; border-radius:16px; padding:32px 24px; color:#222; box-shadow:0 2px 8px rgba(0,0,0,0.08); position:relative; overflow:hidden;">
+    <div style="width:100%; height:80px; position:relative; margin-bottom:12px;">
+      <h2 style="color:#222; margin:0; position:relative; z-index:1; text-align:center; line-height:80px;">Welcome</h2>
+    </div>
+    <!-- Mountain Range SVG with more dimension (multiple layers, no white tips, taller mountains) -->
+    <svg viewBox="0 0 800 220" width="100%" height="220" style="position:absolute; left:0; bottom:0; z-index:0; display:block;" preserveAspectRatio="none">
+      <!-- Farthest mountains (lightest shade) -->
+      <polygon points="0,220 20,200 40,170 60,180 90,185 130,200 170,170 210,180 250,160 290,185 330,170 370,190 410,160 450,180 490,170 530,200 570,180 610,190 650,170 690,200 730,180 770,200 800,190 800,220 0,220" fill="#333" opacity="0.5" />
+      <!-- Extra background mountain for more left-side dimension -->
+      <polygon points="0,220 10,210 30,180 60,170 90,175 120,200 0,220" fill="#444" opacity="0.4" />
+      <!-- Middle mountains (mid shade) -->
+      <polygon points="0,220 20,210 40,200 80,190 120,210 160,180 200,200 240,180 280,210 320,190 360,210 400,180 440,200 480,190 520,210 560,200 600,210 640,190 680,210 720,200 760,210 800,200 800,220 0,220" fill="#222" opacity="0.7" />
+      <!-- Extra midground mountain for more left-side dimension -->
+      <polygon points="0,220 25,205 55,190 85,200 115,210 0,220" fill="#292929" opacity="0.6" />
+      <!-- Foreground mountains (darkest shade) -->
+      <polygon points="0,220 40,170 80,180 120,160 160,200 200,170 240,200 280,180 320,210 360,170 400,200 440,180 480,210 520,170 560,200 600,180 640,210 680,170 720,200 760,180 800,210 800,220 0,220" fill="#111" />
+      <polygon points="60,220 100,180 140,200 180,170 220,210 260,180 300,210 340,180 380,210 420,180 460,210 500,180 540,210 580,180 620,210 660,180 700,210 740,180 780,210 800,220 60,220" fill="#181818" />
+    </svg>
   </section>
 
   <section id="summary">
