@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>My Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; position: relative; }
     header { background: #222; color: #fff; padding: 20px 0; }
     nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
     nav ul li { margin: 0 15px; }
@@ -14,9 +14,21 @@
     h2 { color: #333; }
     .skills-list { display: flex; flex-wrap: wrap; gap: 15px; }
     .skill { background: #e0e0e0; padding: 10px 20px; border-radius: 20px; }
+    /* Decorative SVGs */
+    .decorative-svg {
+      position: fixed;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .decorative-svg.top-left { top: 0; left: 0; width: 180px; height: 180px; opacity: 0.13; }
+    .decorative-svg.bottom-right { bottom: 0; right: 0; width: 220px; height: 220px; opacity: 0.11; }
+    .decorative-svg.center { top: 40%; left: 50%; transform: translate(-50%, -50%); width: 120px; height: 120px; opacity: 0.09; }
   </style>
 </head>
 <body>
+  <!-- Two bold burgundy lines down the left side of the page -->
+  <div style="position:fixed; top:0; left:20px; width:10px; height:100vh; background:#7B2237; z-index:1;"></div>
+  <div style="position:fixed; top:0; left:38px; width:6px; height:100vh; background:#B25C7A; z-index:1;"></div>
   <header>
     <h1 style="text-align:center;">Holly Dye-Clark<br>
       <span style="font-size:1rem; font-weight:normal; display:block; margin-top:8px;">
